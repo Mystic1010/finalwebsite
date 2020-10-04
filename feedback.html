@@ -1,0 +1,82 @@
+
+<html>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+    </style>
+    <link rel="stylesheet" href="styles.css">
+    <script>
+      function goBack() {
+        window.history.back();
+      }
+      </script> 
+      <script src= 
+      "https://smtpjs.com/v3/smtp.js"> 
+    </script>
+    <script type="text/javascript"> 
+      function sendEmail() { 
+        Email.send({ 
+          Host: "smtp.gmail.com", 
+          To: 'vikeshgoradia@gmail.com', 
+          From: "antora98@gmail.com", 
+          Subject: "Sending Email using javascript", 
+          Body: "Well that was easy!!", 
+        }) 
+          .then(function (message) { 
+            alert("Your response has been recorded") 
+          }); 
+      } 
+    </script> 
+    <body bgcolor="#050505">
+        <nav class="navbar">
+            <div class="max-width">
+                <div class="logo"><span class="Portfo">Portfo</span><span class="lio">lio.</span></div>
+                    <ul class="menu">
+                        <li><a href="index.html" class="menu-btn">Home</a></li>
+                        <li><a href="#" class="menu-btn">About</a></li>
+                    </ul>
+            </div>
+        </nav>
+        <div class="button_back">
+          <button class="back"onclick="goBack()">Go Back</button>
+      </div>
+        <div class="container">
+            <form method="post">
+                <p>
+              <label for="fullname">Full Name:</label>
+              <p>
+              <input type="text" id="fname" class="fullname"name="Firstname:" placeholder="Your name.." required>
+              </p>
+              </p>
+              <p>
+              <label for="email">Email:</label>
+              <p>
+                <input type="email" id="email" class="email" placeholder="Your email..." required>
+              </p>
+              </p>
+              <p>
+              <label for="country">What would you like to change?</label>
+              <p>
+              <select id="feedback" class="options" name="Feedback:" required>
+                <option value="Interface" class="interface">Interface</option>
+                <option value="Colours"class="colours">Colours</option>
+                <option value="Content"class="content">Content</option>
+                <option value="Other"class="others">Other...</option>
+              </select>
+            </p>
+              </p>
+              <p>
+              <div class="feedback_consideration">
+                  For utmost attention please describe the problem in detail
+              </div>
+            </p>
+                <p>
+              <label for="subject">Describe the problem...</label>
+                <p>
+              <textarea id="subject" name="subject" class="subject"placeholder="Write something.." style="height:150px; width: 350px;" not-required></textarea>
+              </p>
+              </p>
+              <input type="button" value="sendEmail" class="submit" onclick="sendEmail()">
+            </form>
+          </div>
+    </body>
+</html>
