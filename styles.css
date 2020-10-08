@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@1,600&display=swap');
 .back{
     background-color: #050505;
     color: white;
@@ -42,7 +45,7 @@
 .options{
     height: 50px;
     width: 120px;
-    font-family: 'Ubuntu';
+    font-family: 'Satisfy', cursive;
     color: black;
     font-size: 20px;
     border-radius: 5px;
@@ -91,6 +94,7 @@
     top: 0;
     background-color: #050505;
     opacity: 1;
+    z-index: 1;
 }
 .navbar .logo a{
     color: white; 
@@ -102,7 +106,8 @@
     display: inline-block;
 }
 .navbar .menu li:hover{
-    color: crimson
+    color: crimson;
+    border-color: white;
 }
 .navbar .menu li a{
     color: white;
@@ -117,15 +122,7 @@
     padding: 0 80px;
     margin: auto;
 }
-.menu-btn{
-    font-family: 'Ubuntu';
-    font-size: 18px;
-    padding: 15px 0;
-    font-weight: 500;
-    margin-left: 25px;
-    color: white;
-    text-decoration: none;
-}
+
 .menu-btn1{
     font-family: 'Ubuntu';
     font-size: 20px;
@@ -139,10 +136,15 @@
     background-color: rgb(0, 255, 76);  
     color: black;
 }
-.menu-btn1:hover{
-    transition-duration: 0.5s;
-    box-shadow: none;
-    background-color: white;
+.menu-btn{
+    font-family: 'Ubuntu';
+    font-size: 18px;
+    padding: 15px 0;
+    font-weight: 500;
+    margin-left: 25px;
+    color: white;
+    text-decoration: none;
+    letter-spacing: 0;
 }
 .chemistry{
     color: crimson;
@@ -150,16 +152,20 @@
     height: 400px;
     border-radius: 15px;
     text-align: center;
-    background: url("images/bg.jpg") no-repeat center;
+    background-image: url(images/bg.jpg);
     background-size: cover; 
     font-size: 50px;
-    font-family: 'Ubuntu';
+    font-family: 'Indie Flower', cursive;
     display: flex;
     flex-direction: column;
+    text-decoration: underline;
 }
 .chemistry:hover{
     color:black;
-    opacity: 0.5;
+    background: none;
+    background-image: url(images/chemsitry2.jpg);
+    transition-duration: 0.5s;    
+    background-size: cover; 
 }
 .home{
     display:flex;
@@ -179,6 +185,26 @@
     flex-direction: column;
     overflow: hidden;
 }
+.economics{
+    color:white;
+    width: 400px;
+    height: 400px;
+    border-radius: 15px;
+    background: url(images/economics3.jpg) center no-repeat;
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    background-size: cover;
+    align-items: center;
+}
+.a{
+    text-decoration: none;
+}
+.economics:hover{
+    color: black;
+    background-image: url(images/economics2.jpg);
+    transition-duration: 0.5s;
+}
 .subjects{
     display: flex;
     flex-direction: row;
@@ -187,7 +213,10 @@
 }
 .physics:hover{
     color:black;
-    opacity: 0.5;
+    background: url(images/physics2.jpg);
+    background-size: cover;
+    max-width: 400px;
+    transition-duration: 0.5s;
 }
 .space_between{
     height: 400px;
@@ -212,11 +241,11 @@
 }
 
 .mySidenav {
-    position: absolute;
+    position: fixed;
     left: -110px;
     transition: 0.3s;
     padding: 15px;
-    width: 100px;
+    width: 80px;
     text-decoration: none;
     font-size: 20px;
     color: white;
@@ -274,4 +303,9 @@
     padding-top: 20px;
     padding-bottom: 20px;
     text-align: center;
+}
+.menu-btn1:hover{
+    background-color: white;
+    color: crimson;
+    transition-duration: 0.5s;
 }

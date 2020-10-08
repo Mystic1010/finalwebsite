@@ -1,15 +1,22 @@
 <html>
+    <meta name="google-signin-client_id" content="YOUR_CLIENT_ID.apps.googleusercontent.com">
     <head>
         <title>
             Login
         </title>
     </head>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
-    <link rel="stylesheet" href="styles.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+        .login{
+            font-family: 'Ubuntu';
+        }
+    </style>
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
     <body bgcolor="white">
         <div class="input-container">
-        <button class="login">
+        <button id="login">
             Login with google</button>
             </div>
+            <div class="g-signin2" data-onsuccess="onSignIn"></div> 
     </body>
 </html>

@@ -12,36 +12,55 @@
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Secular+One&display=swap" rel="stylesheet">
     <style>
-        .menu-btn1:hover{
+        img{
+            z-index: 1;
+            width: 400px;
+            height: 400px;
+            border-radius: 15px;
+        }
+        img:hover{
+            z-index: -1;
+            transition-duration: 0.5s;
+        }
+        .menu-btn2{
+            font-family: 'Ubuntu';
+            font-size: 18px;
+            padding: 15px 0;
+            font-weight: 500;
+            margin-left: 25px;
             color: white;
+            text-decoration: none;
+            letter-spacing: 0;
+        }
+        body{
+            height: 5000px;
         }
     </style>
     <body class="body_homepage" bgcolor="#050505">
-
         <nav class="navbar">
             <div class="max-width">
                 <div class="logo"><span class="Portfo">Portfo</span><span class="lio">lio.</span></div>
                     <ul class="menu">
                         <li><a href="index.html" class="menu-btn">Home</a></li>
                         <li><a href="about.html" class="menu-btn">About</a></li>
-                    <li><a href="login.html" class="menu-btn1" style="color:black;">Login</a></li>
+                        <li><a href="feedback.html" class="menu-btn">Feedback</li>
+                        <li><a href="login.html" class="menu-btn1" style="color:black;">Login</a></li>
                     </ul>
             </div>
         </nav>
         <div class="subjects">
         <a href="chemistry_notes.html">
             <div class="chemistry">
+                    
             </div>
+        </a>
+        <a href="economic_notes.html">
+            <div class="economics"></div>
         </a>
             <a href="physics_notes.html">
                 <div class="physics">
                 </div>
             </a>
-            </div>
-        </div>
-        <div class="tab">
-            <div id="mySidenav" class="sidenav">
-                <a href="feedback.html" id="about">Feedback</a>
             </div>
         </div>
     </body> 
